@@ -1,0 +1,47 @@
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 100px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow-y: auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#hideLink {
+  text-decoration: none;
+}
