@@ -17,11 +17,18 @@ nav {
     max-width: 160px;
     margin: 0;
     padding: 1em;
+    background-color: lightcoral;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 1em;
+}
+
+/* Style the nav li elements to give spacing between the links. */
+nav li {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 nav ul a {
@@ -44,4 +51,9 @@ img {
 
 #hideLink {
   text-decoration: none;
+}
+
+/* Style the top section of the website. */
+#top-section {
+    background-color: #f5c050;
 }
