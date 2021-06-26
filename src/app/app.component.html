@@ -3,68 +3,75 @@
     {{title}}
   </header>
 </div>
-
-<div class="w3-container">
-  <nav>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/lamwinnie1/">LinkedIn</a></li>
-      <li><a href="https://github.com/wwyl1234">Github</a></li>
-      <li><a href="https://twitter.com/wwyl1234">Twitter</a></li>
-      <li><a href="mailto:winnie.lam1234@gmail.com">Contact</a></li>
-    </ul>
-  </nav>
-  <article>
-    <p>
-      Hello! I am Winnie Lam!
-    </p>
-    <p>
-      I have a M.Math of Computer Science at University of Waterloo. 
-      I also have a M.Math of Pure Mathematics at University of Waterloo. 
-      Furthermore, I have a B.Ed. and a H.B.Sc at University of Toronto. 
-      In my undergraduate days, I took a bunch of math and computer science courses and
-      I also worked part-time in various jobs like tutor and teaching assistant.
-    </p>
-    <p>
-      After my intensive education, I worked in the telecommunication industry and then computer security industry.
-      I have done all sorts of testing ranging from mobile testing, web browser testing, network testing and much more.
-      I am familar with Linux, Windows and Mac OS environment. 
-      I also built several tools to improve QA processes or automate manual steps. 
-      I can test and I can code with the breaker mindset. 
-      My favourite programming language is Python. I have touched a lot of programming languages.
-      The other recent programming lanugages that I have touched are Javascript, PowerShell, Bash, C#, Ruby (on the side).
-    </p>
-    <p>
-      If you want to check what I have been up to, you can check my Twitter.
-    </p>
-    <p>
-      I am a goal-oriented person and enjoys trying new things and completing tasks.
-    </p>
-    <p>
-      I currently enjoy the following activities which I mainly self-taught:
-    </p>
-    <div class="flex-container">
-      <div>
-        <h1>Painting</h1>
-        <img src="assets/painting.jpg" align="center">
-      </div>
-      <div>
-        <h1>Drawing</h1>
-        <img src="assets/clothdrawing.jpg" align="center">
-      </div>
-      <div>
-        <h1>Knitting</h1>
-        <img src="assets/knittedheadband.jpg" align="center">
-      </div>
-      <div class="w3-quarter">
-        <h1>Playing Guitar</h1>
-        <img src="assets/guitar.jpg" align="center">
-      </div>
+<div class="topnav">
+  <a href="#home" class="active">&nbsp;</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="https://www.linkedin.com/in/lamwinnie1/">LinkedIn</a>
+      <a href="https://github.com/wwyl1234">Github</a>
+      <a href="https://twitter.com/wwyl1234">Twitter</a>
+      <a href="mailto:winnie.lam1234@gmail.com">Contact</a>
     </div>
-  </article>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" (click)="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
 </div>
+
+
+<article>
+  <p>
+    Hello! I am Winnie Lam!
+  </p>
+  <p>
+    I have a M.Math of Computer Science at University of Waterloo. 
+    I also have a M.Math of Pure Mathematics at University of Waterloo. 
+    Furthermore, I have a B.Ed. and a H.B.Sc at University of Toronto. 
+    In my undergraduate days, I took a bunch of math and computer science courses and
+    I also worked part-time in various jobs like tutor and teaching assistant.
+  </p>
+  <p>
+    After my intensive education, I worked in the telecommunication industry and then computer security industry.
+    I have done all sorts of testing ranging from mobile testing, web browser testing, network testing and much more.
+    I am familar with Linux, Windows and Mac OS environment. 
+    I also built several tools to improve QA processes or automate manual steps. 
+    I can test and I can code with the breaker mindset. 
+    My favourite programming language is Python. I have touched a lot of programming languages.
+    The other recent programming lanugages that I have touched are Javascript, PowerShell, Bash, C#, Ruby (on the side).
+  </p>
+  <p>
+    If you want to check what I have been up to, you can check my Twitter.
+  </p>
+  <p>
+    I am a goal-oriented person and enjoys trying new things and completing tasks.
+  </p>
+  <p>
+    I currently enjoy the following activities which I mainly self-taught:
+  </p>
+  <div class="flex-container">
+    <div>
+      <h1>Painting</h1>
+      <img src="assets/painting.jpg" align="center">
+    </div>
+    <div>
+      <h1>Drawing</h1>
+      <img src="assets/clothdrawing.jpg" align="center">
+    </div>
+    <div>
+      <h1>Knitting</h1>
+      <img src="assets/knittedheadband.jpg" align="center">
+    </div>
+    <div class="w3-quarter">
+      <h1>Playing Guitar</h1>
+      <img src="assets/guitar.jpg" align="center">
+    </div>
+  </div>
+</article>
+
 
 <footer>
   Copyright &copy; Winnie Lam
 </footer>
+
 
 <router-outlet></router-outlet>

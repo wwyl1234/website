@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Winnie Lam';
+
+  toggleMenu(){
+    var divMyLinks = <HTMLDivElement>document.getElementById("myLinks");
+      if (divMyLinks.style.display === "block") {
+        divMyLinks.style.display = "none";
+      } else {
+        divMyLinks.style.display = "block";
+    }
+  }
 }
