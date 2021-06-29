@@ -20,16 +20,27 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'website'`, () => {
+  it(`should have title as 'Winnie Lam'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('website');
+    expect(app.title).toEqual('Winnie Lam');
   });
 
-  it('should render title', () => {
+  it('should render menu links', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('website app is running!');
+    const links = compiled.querySelectorAll('#myLinks a')
+    const linkNames = ['LinkedIn', 'Github', 'Twitter', 'Contact']; 
+    const hrefs = [
+      'https://www.linkedin.com/in/lamwinnie1/',
+      'https://github.com/wwyl1234',
+      'https://twitter.com/wwyl1234',
+      'mailto:winnie.lam1234@gmail.com'
+     ]
+    for (let i = 0; i < links.length; i++) {
+        expect(links[i].textContent).toContain(linkNames[i]);
+        expect(links[i].href).toContain(hrefs[i]);
+    }
   });
 });
